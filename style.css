@@ -49,3 +49,9 @@ body {
 }
 
 /*! responsive */
+@media (max-width: 420px) {
+    .component-box {
+        height: unset;
+        margin-top: 4.375rem;
+    }
+  }
