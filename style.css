@@ -12,17 +12,15 @@
 body {
     overflow-x: hidden;
     background-color: hsl(212, 45%, 89%);
-    height: 100vh;
 }
 
 /*! base end */
 
 .component-box {
-    height: 96vh;
+    min-height: calc(100vh - 1.875rem);
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .box {
@@ -30,9 +28,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.25rem;
     text-align: center;
-    width: 18.75rem;
+    width: 18.125rem;
     padding: .9375rem;
     background-color: hsl(0, 0%, 100%);
     border-radius: 1.25rem;
@@ -44,15 +41,16 @@ body {
     border-radius: .9375rem;
 }
 
-.title {
-    font-size: 1.3125rem;
-    font-weight: 700;
+h1 {
+    font-size: 1.25rem;
+    margin: 1.25rem .5625rem 1.25rem .5625rem;
 }
 
 .desc {
+    color: hsl(220, 15%, 55%);
     font-size: .9375rem;
     font-weight: 400;
-    padding: 0 0.875rem 1.25rem 0.875rem;
+    margin: 0 .5625rem 1.875rem .5625rem;
 }
 
 /* ! footer start */
@@ -62,6 +60,7 @@ body {
     align-items: center;
     font-size: 12px;
     letter-spacing: 1px;
+    height: 1.875rem;
 }
 
 .footer .icons i {
@@ -84,9 +83,16 @@ body {
         justify-content: space-between;
     }
     .component-box {
-        height: 80vh;
+        min-height: calc(100vh - 3.75rem);
+    }
+    .box {
+        max-width: 18.125rem;
+    }
+    .box img {
+        max-width: 100%;
     }
     .footer {
         flex-direction: column;
+        min-height: 60px;
     }
 }
